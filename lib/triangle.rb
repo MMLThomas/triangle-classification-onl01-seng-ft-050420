@@ -11,7 +11,7 @@ class Triangle
   def kind 
     if @length_one == @length_two && @length_one == @length_three
       :equilateral
-    elsif 
+    elsif @length_one == @length_two || @length_one == @length_two || @length_one == @length_two
     
     
 end
