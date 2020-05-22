@@ -12,7 +12,8 @@ class Triangle
     if @length_one == @length_two && @length_one == @length_three
       :equilateral
     elsif @length_one == @length_two || @length_one == @length_three || @length_three == @length_two
-      :scalene
+      :isosceles
+    elsif 
     
     
 end
