@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind 
-    if
+    if a + b > c && a + c > b && c + b > a
     if @length_one == @length_two && @length_one == @length_three
       :equilateral
     elsif @length_one == @length_two || @length_one == @length_three || @length_three == @length_two
