@@ -8,9 +8,16 @@ class Triangle
     @length_three = length_three
   end
   
+  
+  
+  class TriangleError < StandardError
+    
+    end
+  
   def kind 
-    if length_one + length_two > c && length_one + c > length_two && c + length_two > length_one
-    if @length_one == @length_two && @length_one == @length_three
+    if !(@length_one + @length_two > @length_three && @length_one + @length_three > @length_two && @length_three + @length_two > @length_one)
+        
+    elsif @length_one == @length_two && @length_one == @length_three
       :equilateral
     elsif @length_one == @length_two || @length_one == @length_three || @length_three == @length_two
       :isosceles
