@@ -16,6 +16,7 @@ class Triangle
     elsif a + b > c && a + c > b && c + b > a
       :scalene
     end
+  end
     
     
 end
